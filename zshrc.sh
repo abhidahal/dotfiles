@@ -103,9 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias update='sudo apt update -y'
 alias upgrade='sudo apt upgrade -y'
@@ -113,6 +110,16 @@ alias inst='sudo apt install -y'
 alias c='clear'
 alias bh='cd /home/abhi/github/bookhub-frontend'
 alias v='nvim'
-alias ls='ls -al'
+alias ls='ls -l --color=auto --group-directories-first'
+alias la='ls -al --color=auto --group-directories-first'
+mkcd ()
+{
+    mkdir -p -- "$1" &&
+       cd -P -- "$1"
+}
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
