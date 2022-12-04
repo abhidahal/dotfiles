@@ -50,6 +50,6 @@ degit github:abhidahal/dotfiles/.config/nvim ~/.config/nvim
 - Custom lualine theme
 - Terminal toggle
 - Custom keymaps
-  > and many more plugins integrations such as :
 
+> and many more plugins integrations such as :
 > gitsigns, alpha, whichkey, colorizer, indentline , ...

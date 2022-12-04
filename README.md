@@ -19,7 +19,8 @@ This is my custom Linux configurations from scratch to make better terminal expe
 
 ## ⚙️ Installation
 
-- See wsl_setup.md for installation process from scratch.
+- See [wsl_setup.md](https://github.com/abhidahal/dotfiles/blob/main/wsl_setup.md) for installation process from scratch.
+- See [nvim](https://github.com/abhidahal/dotfiles/tree/main/.config/nvim) folder for Neovim configuration
 
 
 ## 🪄 Features
