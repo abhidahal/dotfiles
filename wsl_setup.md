@@ -15,6 +15,19 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
+**<H2>Enable the following from Windows Feature</H2>**
+
+![Screenshot 2022-12-08 110658](https://user-images.githubusercontent.com/87414003/206364308-77c96257-0a06-4630-a4f3-3cde10870e4b.png)
+
+
+> They may not be in that order in the list.
+
+**<H2>Enable the Virtualization from BIOS</H2>**
+
+![image](https://user-images.githubusercontent.com/87414003/206364714-a96d2fd3-114c-4385-a3a2-a8be71877cea.png)
+
+> The option name varies according to different device.
+
 
 **<H2>Install kernal</H2>**
 
@@ -73,6 +86,10 @@ cat .ssh/id_rsa.pub
 ```
 
 **<h1>zsh</h1>**
+
+```
+sudo apt install zsh
+```
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
