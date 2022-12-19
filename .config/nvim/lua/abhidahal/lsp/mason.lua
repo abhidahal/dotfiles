@@ -20,8 +20,8 @@ end
 
 
 local opts = {
-  on_attach = require("user.lsp.handlers").on_attach,
-  capabilities = require("user.lsp.handlers").capabilities,
+  on_attach = require("abhidahal.lsp.handlers").on_attach,
+  capabilities = require("abhidahal.lsp.handlers").capabilities,
 }
 
 require("mason-lspconfig").setup_handlers({

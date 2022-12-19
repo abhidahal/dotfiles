@@ -8,3 +8,6 @@ alias vim='nvim'
 alias ls="exa --icons"
 alias ll='ls -l --color=auto --group-directories-first'
 alias la='ls -al --color=auto --group-directories-first'
+alias vv='nvim .'
+alias p='pnpm'
+alias explorer='explorer.exe'
