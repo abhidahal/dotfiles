@@ -7,3 +7,11 @@ function mkcd() {
   fi
   mkdir "${DIR}" && cd "${DIR}"
 } 
+
+function cl() {
+  DIR="$*";
+  if [ $# -lt 1 ]; then
+    DIR=$HOME;
+  fi;
+  builtin cd "${DIR}" && exa
+}
