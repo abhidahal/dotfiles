@@ -80,6 +80,7 @@ ssh-keygen -t rsa -b 4096 -C "<email>"
 ```
 eval "$(ssh-agent -s)"
 ```
+> run `sudo apt install openssh-client` if not working
 
 ```
 cat .ssh/id_rsa.pub
