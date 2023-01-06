@@ -76,11 +76,11 @@ kex --sl --stop
 ```
 ssh-keygen -t rsa -b 4096 -C "<email>"
 ```
+> run `sudo apt install openssh-client` if not working
 
 ```
 eval "$(ssh-agent -s)"
 ```
-> run `sudo apt install openssh-client` if not working
 
 ```
 cat .ssh/id_rsa.pub
