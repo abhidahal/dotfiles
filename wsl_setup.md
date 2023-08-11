@@ -81,11 +81,17 @@ ssh-keygen -t rsa -b 4096 -C "<email>"
 ```
 eval "$(ssh-agent -s)"
 ```
+```
+ssh-add <private_key>
+```
 
 ```
-cat .ssh/id_rsa.pub
+cat ~/ssh/id_rsa.pub
 ```
-
+```
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+```
 **<h1>zsh</h1>**
 
 ```
