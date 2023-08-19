@@ -1,26 +1,14 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME=""
 plugins=(git zsh-autosuggestions dirhistory jsontools history vi-mode z colorize)
 
 source $ZSH/oh-my-zsh.sh
 
-[[ ! -f ~/.zsh_aliases ]] || source ~/.zsh_aliases
-[[ ! -f ~/.bash_functions ]] || source ~/.bash_functions
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/abhi/.local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ ! -f ~/.config/bash/.bash_aliases ]] || source ~/.config/bash/.bash_aliases
+[[ ! -f ~/.config/bash/.bash_functions ]] || source ~/.config/bash/.bash_functions
 
 export NVM_DIR="/home/abhi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# pnpm
-export PNPM_HOME="/home/abhi/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
- 
-alias luamake=/home/abhi/.config/nvim/lua-language-server/3rd/luamake/luamake
+ eval "$(starship init zsh)"

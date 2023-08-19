@@ -1,22 +1,6 @@
-require "abhidahal.options"
-require "abhidahal.keymaps"
-require "abhidahal.plugins"
-require "abhidahal.colorscheme"
-require "abhidahal.cmp"
-require "abhidahal.lsp"
-require "abhidahal.telescope"
-require "abhidahal.gitsigns"
-require "abhidahal.treesitter"
-require "abhidahal.autopairs"
-require "abhidahal.comment"
-require "abhidahal.nvim-tree"
-require "abhidahal.bufferline"
-require "abhidahal.lualine"
-require "abhidahal.toggleterm"
-require "abhidahal.project"
-require "abhidahal.impatient"
-require "abhidahal.indentline"
-require "abhidahal.alpha"
-require "abhidahal.whichkey"
-require "abhidahal.autocommands"
-require "abhidahal.colorizer"
+require("abhidahal.packer")
+require("abhidahal.set")
+require("abhidahal.lsp")
+require("abhidahal.debugger")
+require("abhidahal.autocmd")
+require("abhidahal.command")
